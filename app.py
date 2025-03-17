@@ -17,7 +17,7 @@ def generate_recipe(components):
             }
         ]
     )
-    return response.choices[0].message.content
+    return response["choices"][0]["message"]["content"]
 
 # Streamlit UI
 st.title("Custom Recipe Generator 🍽️")
